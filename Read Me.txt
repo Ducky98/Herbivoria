@@ -1,0 +1,15 @@
+Module Assignment 2: CSS Problem Statement
+
+The Home Page is designed with four links: Home, About, Contact, and Order Online, each directing users to their respective pages.
+
+Distinct hover effects have been applied to all buttons. Additionally, a variety of font families have been utilized throughout the page's elements.
+
+Grid backgrounds are implemented in both the navbar and other locations for enhanced visual appeal and structure.
+
+The 'Order Online' page boasts transitions and hover effects for an engaging user experience.
+
+The 'Contact Us' section features input fields for Name, Email, Mobile, and 'Your Message', facilitating seamless communication.
+
+Note: The navbar and footer are dynamically loaded via JavaScript to ensure code efficiency.
+
+Moreover, the design is responsive, ensuring optimal display across various devices.

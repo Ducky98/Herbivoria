@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Style+Script&display=swap');
+
+:root {
+    --bl: #011839;
+    --smoky: #0a0908;
+    --copper: #6f1a07;
+    --powder: #f2f4f3;
+    --grullo: #a9927d;
+    --umber: #5e503f;
+    --orange: #f1a81c;
+}
+
+.banner {
+    background-image: url(https://img.freepik.com/premium-photo/wooden-top-table-with-bokeh-light-effect_303714-1738.jpg?w=360);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-img {
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    transition: all ease-in-out 0.5s;
+}
+.banner-img:hover{
+    transform: scale(0.9);
+}
+.banner-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--bl);
+    font-weight: bolder;
+    /* font-size: 4em; */
+    transition: all 1s;
+    letter-spacing: 5px;
+}
+.banner-title:hover{
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
+}
+.banner-text {
+    color: var(--powder);
+    font-family: 'Style Script', cursive;
+    font-weight: bolder;
+}
+
+.chef-collection {
+    background-color: var(--umber);
+}
+
+.chef-profile {
+    transition: 0.5s ease-in-out;
+}
+
+.chef-profile:hover {
+    transform: scale(1.02);
+}
+
+/* .chef-img{
+    max-height: 200px;
+} */
+.bg-color1{
+    color: #f2f4f3;
+    background: linear-gradient(45deg, blue, red);
+    text-align: justify;
+}
+.bg-color2{
+    color: #f2f4f3;
+    background: linear-gradient(45deg, red, blue);
+    text-align: justify;
+}
+.btn {
+    position: relative;
+    display: inline-flex;
+    height: 40px;
+    width: 80%;
+    /* border-radius: 5px; */
+    margin: 10px 13px;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.btn .inner {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn button {
+    padding: 4px 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn:hover .inner {
+    left: 0;
+}
+.btn1 .inner{
+    background: -webkit-linear-gradient(right, #f7b733,#fc4a1a,#f7b733,#fc4a1a);
+  }

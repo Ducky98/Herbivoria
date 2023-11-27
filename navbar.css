@@ -1,0 +1,85 @@
+:root{
+    --bl: #011839;
+    --smoky: #0a0908;
+    --copper: #6f1a07;
+    --powder: #f2f4f3;
+    --grullo: #a9927d;
+    --umber: #5e503f;
+    --orange: #f1a81c;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.site-header-secondary{
+    background-color: var(--smoky);
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+.social-header{
+    float: right;
+}
+.social-header a{
+    margin: 0 1.2rem;
+    text-decoration: none;
+}
+.social-header a i{
+    color: white;
+    font-size: 1.1rem;
+}
+.social-header a i:hover{
+    color: var(--orange);
+    transform: scale(1.5);
+}
+.nbg{
+    background-image: linear-gradient(to bottom left, red,var(--orange), var(--copper),var(--bl));
+    padding: 0.6rem 1.1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.nbg a{
+    color: #f2f4f3;
+    font-weight: 600;
+}
+.nav-select ul li{
+    margin: auto 1.1rem;
+    
+}
+.nav-item a{
+    font-weight: bold;
+}
+.nav-item a:hover{
+    color: var(--bl);
+    transform: scale(1.2);
+}
+.reserv{
+    border: 3px solid var(--bl);
+    background-color: var(--bl);
+    color: var(--powder);
+    line-height: 1;
+    transition: all .4s;
+}
+.reserv:hover{
+    background-color: transparent;
+    color: var(--bl);
+    transform: scale(none);
+}
+@media (max-width: 767px) {
+    .site-header-secondary{
+        display: none;
+    }
+    .social-header{
+        float: none;
+    }
+    .reserv{
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .nav-select ul li{
+        text-align: center;
+    }
+}

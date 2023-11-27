@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage | Herbivoria</title>
+  <!-- Bootstrap and all -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- website icon -->
+  <link rel="icon" href="pizza.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <!-- index.html main CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!--Css file for navbar, dont want to rewrite the navbar code again and agian so extra file-->
+  <link rel="stylesheet" href="navbar.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js">/*i dont remeber why this is here*/</script>
+  <script src="code.js">/*main javascript file*/</script>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+
+    <!-- Nav bar form nav.html with the help of code.js (javascript) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- ******************Carousel side *********************** -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slider/slide (1).jpg" class="d-block w-100" alt="slide1">
+        </div>
+        <div class="carousel-item">
+          <img src="slider/slide (2).jpg" class="d-block w-100" alt="slide2">
+        </div>
+        <div class="carousel-item">
+          <img src="slider/slide (3).jpg" class="d-block w-100" alt="slide3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- service section is from here -->
+  <section class="my-5">
+    <div class="container-xl service-container">
+      <div class="service-container-secondry row">
+        <!-- card1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card my-3 mx-auto">
+            <a href="online.html" style="text-decoration: none;">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="online_order" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Order Online
+                </h5>
+                <div class="card-text">
+                  Stay home and order to your doorstep
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card my-3 mx-auto">
+            <a href="contact.html" style="text-decoration: none;">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="dining" class="card-img-top skeleton">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Dining
+                </h5>
+                <div class="card-text">
+                  Taste the Magic, Feel the Love.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card my-3 mx-auto">
+            <a href="online.html" style="text-decoration: none;">
+              <img
+                src="https://images.unsplash.com/photo-1471967183320-ee018f6e114a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reservation" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Reservation
+                </h5>
+                <div class="card-text">
+                  Reserve Your Seat, Savor the Feast!
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection section is active from here -->
+  <section class="my-5 collection container-fluid">
+    <div class="collection-heading mx-auto">
+      <strong>Collections</strong>
+    </div>
+    <!-- card for collection -->
+    <div class="container">
+      <div class="collection-wrapper mx-auto row gx-3">
+        <!-- card1 -->
+        <div class="collection-card col-lg-3 col-md-6 col-12">
+          <img
+            src="https://images.unsplash.com/photo-1600850056064-a8b380df8395?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="veg">
+          <div class="info">
+            <h2><strong>Veg</strong></h2>
+            <div class="info-hidden">
+              <p>"Elevate Your Taste with Our Veggie Selection."<i class="fa-solid fa-angle-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="collection-card col-lg-3 col-md-6 col-12">
+          <img
+            src="https://images.unsplash.com/photo-1465014925804-7b9ede58d0d7?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="non-veg">
+          <div class="info">
+            <h2><strong>Non-Veg</strong></h2>
+            <div class="info-hidden">
+              <p>"For the Love of Meat, Unleash Your Appetite."<i class="fa-solid fa-angle-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="collection-card col-lg-3 col-md-6 col-12">
+          <img src="https://2.bp.blogspot.com/-Qurm96_x2SM/T3riSpSa71I/AAAAAAAADX0/URaUAvh0F8s/s1600/IMG_0469.JPG"
+            alt="punjabi-thali">
+          <div class="info">
+            <h2><strong>Punjabi</strong></h2>
+            <div class="info-hidden">
+              <p>"Dil Se Balle Balle: Punjabi Kitchen Delights."
+                <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card4 -->
+        <div class="collection-card col-lg-3 col-md-6 col-12">
+          <img
+            src="https://images.unsplash.com/photo-1665660710687-b44c50751054?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="south-indian">
+          <div class="info">
+            <h2><strong>South Indian</strong></h2>
+            <div class="info-hidden">
+              <p>"Spice Up Your Day, South Indian Way!" <i class="fa-solid fa-angle-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- map section fromm google baba -->
+  <section id="map">
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.186058867354!2d77.06926177549279!3d28.413642175785004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d226e3df2cbef%3A0x93b5977bb14d6014!2sCorporate%20office%20interior%20Design%20and%20build%20company!5e0!3m2!1sen!2sin!4v1699543835386!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
+
+  <div id="footer-placeholder"></div>
+
+
+
+
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

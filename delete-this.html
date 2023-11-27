@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap and all -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- website icon -->
+    <link rel="icon" href="pizza.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <div class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/pizza.webp" height="150px" width="150px" alt="pizza" class="img-fluid"
+                                draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/biryani.avif" height="150px" width="150px" alt="biryani"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/burgur.avif" height="150px" width="150px" alt="burgur"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/cake.avif" height="150px" width="150px" alt="cake" class="img-fluid"
+                                draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/chicken.webp" height="150px" width="150px" alt="chicken"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/dosa.avif" height="150px" width="150px" alt="dosa" class="img-fluid"
+                                draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/northindian.avif" height="150px" width="150px" alt="northindian"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/paneer.avif" height="150px" width="150px" alt="paneer"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/paratha.avif" height="150px" width="150px" alt="paratha"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/rolls.avif" height="150px" width="150px" alt="rolls" class="img-fluid"
+                                draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/sandwich.avif" height="150px" width="150px" alt="sandwich"
+                                class="img-fluid" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="food/slider/thali.avif" height="150px" width="150px" alt="thali" class="img-fluid"
+                                draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script>
+            var slide_select = document.querySelectorAll(".carousel .carousel-item");
+            slide_select.forEach((e) => {
+                const slide = 3;
+                let next = e.nextElementSibling;
+                for (var i = 0; i < slide; i++) {
+                    if (!next) {
+                        next = item[0]
+                    }
+                    let clonechild = next.cloneNode(true)
+                    e.appendChild(clonechild.children[0])
+                    next = next.nextElementSibling
+                }
+            })
+        </script>
+</body>
+
+</html>

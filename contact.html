@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Herbivoria</title>
+    <!-- Bootstrap and all -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- website icon -->
+    <link rel="icon" href="pizza.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--Css file for navbar, dont want to rewrite the navbar code again and agian so extra file-->
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js">/*i dont remeber why this is here*/</script>
+    <script src="code.js">/*main javascript file*/</script>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- Nav bar form nav.html with the help of code.js (javascript) -->
+        <div id="nav-placeholder"></div>
+    </header>
+    <main class="container mx-auto my-5 border bg-light w-75">
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+            directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+        <form>
+            <div class="form-group my-3">
+                <div class="row">
+                    <label for="InputName">Name</label>
+                    <div class="col">
+                        <input type="text" id="InputName" class="form-control" placeholder="First name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" id="InputName" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group my-3">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" required>
+            </div>
+            <div class="form-group my-3">
+                <label for="Inputtele">Mobile Number</label>
+                <input type="tel" class="form-control" id="Inputtele" aria-describedby="emailHelp"
+                    placeholder="Enter Mobile Number" required>
+                <small id="emailtele" class="form-text text-muted">We'll never share your Contact Info with anyone
+                    else.</small>
+            </div>
+            <div class="mb-3">
+                <label for="vTextarea">Your Message</label>
+                <textarea class="form-control" id="vTextarea" placeholder="Your Message....." required></textarea>
+            </div>
+            <div class="m-3 text-left">
+                <a class="btn btn-primary px-4" onclick="document.getElementById('contact-form').submit();">Submit</a>
+            </div>
+        </form>
+    </main>
+
+
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
